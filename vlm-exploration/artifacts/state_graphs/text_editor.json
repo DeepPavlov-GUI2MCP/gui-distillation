@@ -1,0 +1,3142 @@
+{
+  "app": "gnome-text-editor",
+  "exploration_date": "2026-05-11",
+  "model": "gpt-5.4",
+  "total_steps": 20,
+  "total_screens": 20,
+  "total_transitions": 19,
+  "usage": {
+    "tokens_input": 64434,
+    "tokens_output": 11347,
+    "tokens_total": 75781
+  },
+  "screens": {
+    "main_editor_blank": {
+      "description": "A blank GNOME Text Editor window is open with an empty document area. The top bar shows Open, New Document, Save, and a main menu button, along with standard window controls.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main Menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "New Document",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Save",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open",
+          "type": "dropdown",
+          "value": "Open",
+          "enabled": true
+        },
+        {
+          "name": "Document editor",
+          "type": "input",
+          "value": "",
+          "enabled": true
+        },
+        {
+          "name": "New Document",
+          "type": "label",
+          "value": "New Document",
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Document editor",
+        "Main Menu",
+        "Maximize",
+        "Minimize",
+        "New Document",
+        "Open",
+        "Save"
+      ],
+      "screenshot": "screenshots/step_000.png",
+      "path_from_root": []
+    },
+    "main_menu_open": {
+      "description": "The main GNOME Text Editor window is visible with the application menu open as a popover. The menu shows theme choices, zoom controls, and commands including Preferences, Keyboard Shortcuts, Help, and About Text Editor.",
+      "elements": [
+        {
+          "name": "Main Menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "New Document",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Save",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Ctrl+,",
+          "type": "label",
+          "value": "Ctrl+,",
+          "enabled": true
+        },
+        {
+          "name": "Ctrl+?",
+          "type": "label",
+          "value": "Ctrl+?",
+          "enabled": true
+        },
+        {
+          "name": "Ctrl+F",
+          "type": "label",
+          "value": "Ctrl+F",
+          "enabled": true
+        },
+        {
+          "name": "Ctrl+N",
+          "type": "label",
+          "value": "Ctrl+N",
+          "enabled": true
+        },
+        {
+          "name": "Ctrl+P",
+          "type": "label",
+          "value": "Ctrl+P",
+          "enabled": false
+        },
+        {
+          "name": "Ctrl+S",
+          "type": "label",
+          "value": "Ctrl+S",
+          "enabled": false
+        },
+        {
+          "name": "F1",
+          "type": "label",
+          "value": "F1",
+          "enabled": true
+        },
+        {
+          "name": "Shift+Ctrl+S",
+          "type": "label",
+          "value": "Shift+Ctrl+S",
+          "enabled": false
+        },
+        {
+          "name": "Zoom",
+          "type": "label",
+          "value": "100%",
+          "enabled": true
+        },
+        {
+          "name": "About Text Editor",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Discard Changes",
+          "type": "menu_item",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Document Properties",
+          "type": "menu_item",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Find/Replace…",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Help",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Keyboard Shortcuts",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "New Window",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Preferences",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Print",
+          "type": "menu_item",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Save",
+          "type": "menu_item",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Save As…",
+          "type": "menu_item",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Dark theme",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Light theme",
+          "type": "radio",
+          "value": "selected",
+          "enabled": true
+        },
+        {
+          "name": "System theme",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "About Text Editor",
+        "Dark theme",
+        "Discard Changes",
+        "Document Properties",
+        "Find/Replace…",
+        "Help",
+        "Keyboard Shortcuts",
+        "Light theme",
+        "Main Menu",
+        "New Document",
+        "New Window",
+        "Open",
+        "Open menu",
+        "Preferences",
+        "Print",
+        "Save",
+        "Save As…",
+        "System theme",
+        "Zoom in",
+        "Zoom out"
+      ],
+      "screenshot": "screenshots/step_001.png",
+      "path_from_root": [
+        "Main Menu"
+      ]
+    },
+    "preferences_appearance": {
+      "description": "The Preferences dialog is open on the Appearance section, showing theme choices and editor appearance toggles. A close button is available in the title bar, and there is a row for Custom Font with a disclosure button.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Custom Font details",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Appearance",
+          "type": "label",
+          "value": "Appearance",
+          "enabled": true
+        },
+        {
+          "name": "Custom Font",
+          "type": "label",
+          "value": "Custom Font",
+          "enabled": true
+        },
+        {
+          "name": "Display Grid Pattern",
+          "type": "label",
+          "value": "Display Grid Pattern",
+          "enabled": true
+        },
+        {
+          "name": "Display Overview Map",
+          "type": "label",
+          "value": "Display Overview Map",
+          "enabled": true
+        },
+        {
+          "name": "Highlight Current Line",
+          "type": "label",
+          "value": "Highlight Current Line",
+          "enabled": true
+        },
+        {
+          "name": "Preferences",
+          "type": "label",
+          "value": "Preferences",
+          "enabled": true
+        },
+        {
+          "name": "Markdown preview",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Theme 1",
+          "type": "radio",
+          "value": "selected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 2",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 3",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 4",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 5",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 6",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 7",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 8",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Custom Font",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        },
+        {
+          "name": "Display Grid Pattern",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        },
+        {
+          "name": "Display Overview Map",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        },
+        {
+          "name": "Highlight Current Line",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Custom Font",
+        "Custom Font details",
+        "Display Grid Pattern",
+        "Display Overview Map",
+        "Highlight Current Line",
+        "Theme 1",
+        "Theme 2",
+        "Theme 3",
+        "Theme 4",
+        "Theme 5",
+        "Theme 6",
+        "Theme 7",
+        "Theme 8"
+      ],
+      "screenshot": "screenshots/step_002.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences"
+      ]
+    },
+    "preferences_appearance_custom_font_expanded": {
+      "description": "The Preferences dialog remains on the Appearance section, but the Custom Font row is now expanded to show the selected font value, Monospace 11. Additional appearance toggles are visible below.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Custom Font details",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Appearance",
+          "type": "label",
+          "value": "Appearance",
+          "enabled": true
+        },
+        {
+          "name": "Custom Font",
+          "type": "label",
+          "value": "Custom Font",
+          "enabled": true
+        },
+        {
+          "name": "Display Grid Pattern",
+          "type": "label",
+          "value": "Display Grid Pattern",
+          "enabled": true
+        },
+        {
+          "name": "Highlight Current Line",
+          "type": "label",
+          "value": "Highlight Current Line",
+          "enabled": true
+        },
+        {
+          "name": "Monospace 11",
+          "type": "label",
+          "value": "Monospace 11",
+          "enabled": true
+        },
+        {
+          "name": "Preferences",
+          "type": "label",
+          "value": "Preferences",
+          "enabled": true
+        },
+        {
+          "name": "Markdown preview",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Vertical scrollbar",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 1",
+          "type": "radio",
+          "value": "selected",
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 2",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 3",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 4",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 5",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 6",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 7",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Custom Font toggle",
+          "type": "toggle",
+          "value": "on",
+          "enabled": true
+        },
+        {
+          "name": "Display Grid Pattern toggle",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        },
+        {
+          "name": "Highlight Current Line toggle",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Custom Font details",
+        "Custom Font toggle",
+        "Display Grid Pattern toggle",
+        "Highlight Current Line toggle",
+        "Theme preview 1",
+        "Theme preview 2",
+        "Theme preview 3",
+        "Theme preview 4",
+        "Theme preview 5",
+        "Theme preview 6",
+        "Theme preview 7"
+      ],
+      "screenshot": "screenshots/step_003.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details"
+      ]
+    },
+    "font_picker_dialog_open": {
+      "description": "A font selection dialog is open on top of the Preferences window, showing a searchable font list, preview text, size controls, and Cancel/Select actions. The underlying Appearance preferences are partially visible but blocked by the modal dialog.",
+      "elements": [
+        {
+          "name": "Cancel",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Decrease size",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Increase size",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Select",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Font list dropdown",
+          "type": "dropdown",
+          "value": "DejaVu Sans Mono Book",
+          "enabled": true
+        },
+        {
+          "name": "Font size value",
+          "type": "input",
+          "value": "11",
+          "enabled": true
+        },
+        {
+          "name": "Search font name",
+          "type": "input",
+          "value": "",
+          "enabled": true
+        },
+        {
+          "name": "Display Grid Pattern",
+          "type": "label",
+          "value": "Display Grid Pattern",
+          "enabled": true
+        },
+        {
+          "name": "Highlight Current Line",
+          "type": "label",
+          "value": "Highlight Current Line",
+          "enabled": true
+        },
+        {
+          "name": "Monospace 11",
+          "type": "label",
+          "value": "Monospace 11",
+          "enabled": true
+        },
+        {
+          "name": "Preview text",
+          "type": "label",
+          "value": "The quick brown fox jumps over the lazy dog",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size",
+          "enabled": true
+        },
+        {
+          "name": "DejaVu Sans Mono Bold",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "DejaVu Sans Mono Bold Italic",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "DejaVu Sans Mono Book",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "DejaVu Sans Mono Italic",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "DejaVu Serif Bold Italic",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "DejaVu Serif Book",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "DejaVu Serif Italic",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Font size slider",
+          "type": "other",
+          "value": "11",
+          "enabled": true
+        },
+        {
+          "name": "Display Grid Pattern",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        },
+        {
+          "name": "Highlight Current Line",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Cancel",
+        "Close",
+        "Decrease size",
+        "DejaVu Sans Mono Bold",
+        "DejaVu Sans Mono Bold Italic",
+        "DejaVu Sans Mono Book",
+        "DejaVu Sans Mono Italic",
+        "DejaVu Serif Bold Italic",
+        "DejaVu Serif Book",
+        "DejaVu Serif Italic",
+        "Display Grid Pattern",
+        "Font list dropdown",
+        "Font size value",
+        "Highlight Current Line",
+        "Increase size",
+        "Search font name",
+        "Select"
+      ],
+      "screenshot": "screenshots/step_004.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details"
+      ]
+    },
+    "preferences_appearance_font_selected": {
+      "description": "The Preferences dialog is open on the Appearance page after returning from the font picker. Custom Font is enabled and expanded, now showing the selected font as DejaVu Sans Mono 11, with additional appearance toggles visible below.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Custom Font details",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Expand Custom Font",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Appearance",
+          "type": "label",
+          "value": "Appearance",
+          "enabled": true
+        },
+        {
+          "name": "Custom Font",
+          "type": "label",
+          "value": "Custom Font",
+          "enabled": true
+        },
+        {
+          "name": "Display Grid Pattern",
+          "type": "label",
+          "value": "Display Grid Pattern",
+          "enabled": true
+        },
+        {
+          "name": "Highlight Current Line",
+          "type": "label",
+          "value": "Highlight Current Line",
+          "enabled": true
+        },
+        {
+          "name": "Preferences",
+          "type": "label",
+          "value": "Preferences",
+          "enabled": true
+        },
+        {
+          "name": "Selected font",
+          "type": "label",
+          "value": "DejaVu Sans Mono 11",
+          "enabled": true
+        },
+        {
+          "name": "Markdown preview",
+          "type": "other",
+          "value": "# Markdown … Links https://gnome.org … Preformatted Text … Emphasis … Combined … Block quotes too!",
+          "enabled": true
+        },
+        {
+          "name": "Scrollbar",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 1",
+          "type": "radio",
+          "value": "selected",
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 2",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 3",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 4",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 5",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 6",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme preview 7",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Custom Font toggle",
+          "type": "toggle",
+          "value": "on",
+          "enabled": true
+        },
+        {
+          "name": "Display Grid Pattern toggle",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        },
+        {
+          "name": "Highlight Current Line toggle",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Custom Font details",
+        "Custom Font toggle",
+        "Display Grid Pattern toggle",
+        "Expand Custom Font",
+        "Highlight Current Line toggle",
+        "Theme preview 1",
+        "Theme preview 2",
+        "Theme preview 3",
+        "Theme preview 4",
+        "Theme preview 5",
+        "Theme preview 6",
+        "Theme preview 7"
+      ],
+      "screenshot": "screenshots/step_005.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select"
+      ]
+    },
+    "preferences_appearance_collapsed_font": {
+      "description": "The Preferences dialog is open on the Appearance section. The custom font row is collapsed again, and appearance theme choices plus three editor display toggles are visible.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Custom Font details",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Appearance",
+          "type": "label",
+          "value": "Appearance",
+          "enabled": true
+        },
+        {
+          "name": "Custom Font",
+          "type": "label",
+          "value": "Custom Font",
+          "enabled": true
+        },
+        {
+          "name": "Display Grid Pattern",
+          "type": "label",
+          "value": "Display Grid Pattern",
+          "enabled": true
+        },
+        {
+          "name": "Display Overview Map",
+          "type": "label",
+          "value": "Display Overview Map",
+          "enabled": true
+        },
+        {
+          "name": "Highlight Current Line",
+          "type": "label",
+          "value": "Highlight Current Line",
+          "enabled": true
+        },
+        {
+          "name": "Preferences",
+          "type": "label",
+          "value": "Preferences",
+          "enabled": true
+        },
+        {
+          "name": "Preview",
+          "type": "other",
+          "value": "Markdown preview sample",
+          "enabled": true
+        },
+        {
+          "name": "Vertical Scrollbar",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Theme 1",
+          "type": "radio",
+          "value": "selected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 2",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 3",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 4",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 5",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 6",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 7",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Theme 8",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Custom Font",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        },
+        {
+          "name": "Display Grid Pattern",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        },
+        {
+          "name": "Display Overview Map",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        },
+        {
+          "name": "Highlight Current Line",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Custom Font",
+        "Custom Font details",
+        "Display Grid Pattern",
+        "Display Overview Map",
+        "Highlight Current Line",
+        "Theme 1",
+        "Theme 2",
+        "Theme 3",
+        "Theme 4",
+        "Theme 5",
+        "Theme 6",
+        "Theme 7",
+        "Theme 8"
+      ],
+      "screenshot": "screenshots/step_006.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font"
+      ]
+    },
+    "main_editor_blank_returned": {
+      "description": "The main GNOME Text Editor window is visible again with a blank untitled document and no menus or dialogs open. The top bar offers Open, New Document, Save, and the main menu, while the editor area is empty.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main Menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "New Document",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open menu arrow",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Save",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Document editor area",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Main Menu",
+        "Maximize",
+        "Minimize",
+        "New Document",
+        "Open",
+        "Open menu arrow",
+        "Save"
+      ],
+      "screenshot": "screenshots/step_007.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font",
+        "Close"
+      ]
+    },
+    "open_recent_popover_empty": {
+      "description": "An open-recent popover is displayed from the Open button over the blank editor window. The popover contains a search field and shows that there are no recent documents.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main Menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "New Document",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open recent document (Ctrl+K)",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Save",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Search",
+          "type": "input",
+          "value": "",
+          "enabled": true
+        },
+        {
+          "name": "No Recent Documents",
+          "type": "label",
+          "value": "No Recent Documents",
+          "enabled": true
+        },
+        {
+          "name": "document icon",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Main Menu",
+        "Maximize",
+        "Minimize",
+        "New Document",
+        "Open",
+        "Open recent document (Ctrl+K)",
+        "Save",
+        "Search"
+      ],
+      "screenshot": "screenshots/step_008.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font",
+        "Close",
+        "Open"
+      ]
+    },
+    "file_open_dialog": {
+      "description": "A native file chooser dialog is open for selecting a file to open in Text Editor. The sidebar shows common locations and the main file list is currently empty for the selected Recent view.",
+      "elements": [
+        {
+          "name": "Cancel",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Automatically Detected",
+          "type": "dropdown",
+          "value": "Automatically Detected",
+          "enabled": true
+        },
+        {
+          "name": "Text Files",
+          "type": "dropdown",
+          "value": "Text Files",
+          "enabled": true
+        },
+        {
+          "name": "Character Encoding:",
+          "type": "label",
+          "value": "Character Encoding:",
+          "enabled": true
+        },
+        {
+          "name": "Modified",
+          "type": "label",
+          "value": "Modified",
+          "enabled": true
+        },
+        {
+          "name": "Name",
+          "type": "label",
+          "value": "Name",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type",
+          "enabled": true
+        },
+        {
+          "name": "Desktop",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Home",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Other Locations",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Recent",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "config-2",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "gui_distillation",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Automatically Detected",
+        "Cancel",
+        "Desktop",
+        "Home",
+        "Open",
+        "Other Locations",
+        "Recent",
+        "Text Files",
+        "config-2",
+        "gui_distillation"
+      ],
+      "screenshot": "screenshots/step_009.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font",
+        "Close",
+        "Open",
+        "Open"
+      ]
+    },
+    "file_open_dialog_home": {
+      "description": "The native file chooser is open in the Home location, showing one visible folder named gui_distillation. Encoding and file type dropdowns are available at the bottom along with Cancel and Open buttons.",
+      "elements": [
+        {
+          "name": "Back",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Cancel",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Forward",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "user1",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Automatically Detected",
+          "type": "dropdown",
+          "value": "Automatically Detected",
+          "enabled": true
+        },
+        {
+          "name": "Text Files",
+          "type": "dropdown",
+          "value": "Text Files",
+          "enabled": true
+        },
+        {
+          "name": "25 Apr",
+          "type": "label",
+          "value": "25 Apr",
+          "enabled": true
+        },
+        {
+          "name": "Character Encoding:",
+          "type": "label",
+          "value": "Character Encoding:",
+          "enabled": true
+        },
+        {
+          "name": "Modified",
+          "type": "label",
+          "value": "Modified",
+          "enabled": true
+        },
+        {
+          "name": "Name",
+          "type": "label",
+          "value": "Name",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type",
+          "enabled": true
+        },
+        {
+          "name": "Desktop",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Home",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Other Locations",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Recent",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "config-2",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "gui_distillation",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "gui_distillation",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Automatically Detected",
+        "Back",
+        "Cancel",
+        "Desktop",
+        "Forward",
+        "Home",
+        "Open",
+        "Other Locations",
+        "Recent",
+        "Text Files",
+        "config-2",
+        "gui_distillation",
+        "user1"
+      ],
+      "screenshot": "screenshots/step_010.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font",
+        "Close",
+        "Open",
+        "Open",
+        "Home"
+      ]
+    },
+    "file_open_dialog_home_folder_selected": {
+      "description": "The native file chooser is open in the Home directory with the folder gui_distillation selected in the file list. Sidebar locations, navigation controls, encoding and file type dropdowns, and Cancel/Open buttons are visible.",
+      "elements": [
+        {
+          "name": "Back",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Cancel",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Forward",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "user1",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Automatically Detected",
+          "type": "dropdown",
+          "value": "Automatically Detected",
+          "enabled": true
+        },
+        {
+          "name": "Text Files",
+          "type": "dropdown",
+          "value": "Text Files",
+          "enabled": true
+        },
+        {
+          "name": "Character Encoding:",
+          "type": "label",
+          "value": "Character Encoding:",
+          "enabled": true
+        },
+        {
+          "name": "Modified",
+          "type": "label",
+          "value": "Modified",
+          "enabled": true
+        },
+        {
+          "name": "Name",
+          "type": "label",
+          "value": "Name",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type",
+          "enabled": true
+        },
+        {
+          "name": "Desktop",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Home",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Other Locations",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Recent",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "config-2",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "gui_distillation",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "gui_distillation",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Automatically Detected",
+        "Back",
+        "Cancel",
+        "Desktop",
+        "Forward",
+        "Home",
+        "Open",
+        "Other Locations",
+        "Recent",
+        "Text Files",
+        "config-2",
+        "gui_distillation",
+        "user1"
+      ],
+      "screenshot": "screenshots/step_011.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font",
+        "Close",
+        "Open",
+        "Open",
+        "Home",
+        "gui_distillation"
+      ]
+    },
+    "file_open_dialog_home_folder_opened": {
+      "description": "The native file chooser remains open in the Home directory, showing the gui_distillation folder in the file list and sidebar. The folder row is no longer highlighted, so it appears the previous click opened or deselected it without changing directories.",
+      "elements": [
+        {
+          "name": "Back",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Cancel",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Forward",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "user1",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Automatically Detected",
+          "type": "dropdown",
+          "value": "Automatically Detected",
+          "enabled": true
+        },
+        {
+          "name": "Text Files",
+          "type": "dropdown",
+          "value": "Text Files",
+          "enabled": true
+        },
+        {
+          "name": "25 Apr",
+          "type": "label",
+          "value": "25 Apr",
+          "enabled": true
+        },
+        {
+          "name": "Character Encoding:",
+          "type": "label",
+          "value": "Character Encoding:",
+          "enabled": true
+        },
+        {
+          "name": "Modified",
+          "type": "label",
+          "value": "Modified",
+          "enabled": true
+        },
+        {
+          "name": "Name",
+          "type": "label",
+          "value": "Name",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type",
+          "enabled": true
+        },
+        {
+          "name": "Desktop",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Home",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Other Locations",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Recent",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "config-2",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "gui_distillation",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "gui_distillation",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Automatically Detected",
+        "Back",
+        "Cancel",
+        "Desktop",
+        "Forward",
+        "Home",
+        "Open",
+        "Other Locations",
+        "Recent",
+        "Text Files",
+        "config-2",
+        "gui_distillation",
+        "user1"
+      ],
+      "screenshot": "screenshots/step_012.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font",
+        "Close",
+        "Open",
+        "Open",
+        "Home",
+        "gui_distillation",
+        "gui_distillation"
+      ]
+    },
+    "file_open_dialog_home_with_up_navigation": {
+      "description": "The native file chooser is still open in the Home directory. A breadcrumb/header now shows the current location as user1 with back and disabled forward navigation, while the file list still contains the gui_distillation folder.",
+      "elements": [
+        {
+          "name": "Back",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Cancel",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Forward",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "config-2 eject",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "user1",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Automatically Detected",
+          "type": "dropdown",
+          "value": "Automatically Detected",
+          "enabled": true
+        },
+        {
+          "name": "Text Files",
+          "type": "dropdown",
+          "value": "Text Files",
+          "enabled": true
+        },
+        {
+          "name": "25 Apr",
+          "type": "label",
+          "value": "25 Apr",
+          "enabled": true
+        },
+        {
+          "name": "Character Encoding:",
+          "type": "label",
+          "value": "Character Encoding:",
+          "enabled": true
+        },
+        {
+          "name": "Modified",
+          "type": "label",
+          "value": "Modified",
+          "enabled": true
+        },
+        {
+          "name": "Name",
+          "type": "label",
+          "value": "Name",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type",
+          "enabled": true
+        },
+        {
+          "name": "Desktop",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Home",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Other Locations",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Recent",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "config-2",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "gui_distillation",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "gui_distillation",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Automatically Detected",
+        "Back",
+        "Cancel",
+        "Desktop",
+        "Forward",
+        "Home",
+        "Open",
+        "Other Locations",
+        "Recent",
+        "Text Files",
+        "config-2",
+        "config-2 eject",
+        "gui_distillation",
+        "user1"
+      ],
+      "screenshot": "screenshots/step_013.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font",
+        "Close",
+        "Open",
+        "Open",
+        "Home",
+        "gui_distillation",
+        "gui_distillation",
+        "gui_distillation"
+      ]
+    },
+    "file_open_dialog_other_locations": {
+      "description": "The native file chooser is open on the Other Locations view. It shows local computer storage information and a Connect to Server section with a server address field, while file-opening controls remain at the bottom.",
+      "elements": [
+        {
+          "name": "Cancel",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Connect",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Server address options",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Automatically Detected",
+          "type": "dropdown",
+          "value": "Automatically Detected",
+          "enabled": true
+        },
+        {
+          "name": "Text Files",
+          "type": "dropdown",
+          "value": "Text Files",
+          "enabled": false
+        },
+        {
+          "name": "Enter server address...",
+          "type": "input",
+          "value": "",
+          "enabled": true
+        },
+        {
+          "name": "/",
+          "type": "label",
+          "value": "/",
+          "enabled": true
+        },
+        {
+          "name": "19.0 GB / 31.6 GB available",
+          "type": "label",
+          "value": "19.0 GB / 31.6 GB available",
+          "enabled": true
+        },
+        {
+          "name": "Character Encoding",
+          "type": "label",
+          "value": "Character Encoding:",
+          "enabled": true
+        },
+        {
+          "name": "Connect to Server",
+          "type": "label",
+          "value": "Connect to Server",
+          "enabled": true
+        },
+        {
+          "name": "On This Computer",
+          "type": "label",
+          "value": "On This Computer",
+          "enabled": true
+        },
+        {
+          "name": "Computer",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Desktop",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Home",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Other Locations",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Recent",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "config-2",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "gui_distillation",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Automatically Detected",
+        "Cancel",
+        "Computer",
+        "Connect",
+        "Desktop",
+        "Enter server address...",
+        "Home",
+        "Open",
+        "Other Locations",
+        "Recent",
+        "Server address options",
+        "Text Files",
+        "config-2",
+        "gui_distillation"
+      ],
+      "screenshot": "screenshots/step_014.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font",
+        "Close",
+        "Open",
+        "Open",
+        "Home",
+        "gui_distillation",
+        "gui_distillation",
+        "gui_distillation",
+        "Other Locations"
+      ]
+    },
+    "file_open_dialog_computer": {
+      "description": "The native file chooser is open in the Computer/root location, showing top-level system folders in the file list. Sidebar locations, breadcrumb navigation, encoding and file type dropdowns, and Cancel/Open controls are visible.",
+      "elements": [
+        {
+          "name": "Back",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Cancel",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Computer",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Eject",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Forward",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "home",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "user1",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Automatically Detected",
+          "type": "dropdown",
+          "value": "Automatically Detected",
+          "enabled": true
+        },
+        {
+          "name": "Text Files",
+          "type": "dropdown",
+          "value": "Text Files",
+          "enabled": true
+        },
+        {
+          "name": "Character Encoding:",
+          "type": "label",
+          "value": "Character Encoding:",
+          "enabled": true
+        },
+        {
+          "name": "Modified",
+          "type": "label",
+          "value": "Modified",
+          "enabled": true
+        },
+        {
+          "name": "Name",
+          "type": "label",
+          "value": "Name",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type",
+          "enabled": true
+        },
+        {
+          "name": "Desktop",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Home",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Other Locations",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Recent",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "bin",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "boot",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "cdrom",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "config-2",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "dev",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "etc",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "gui_distillation",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "home",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "lib",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "lib32",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "lib64",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "libx32",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Automatically Detected",
+        "Back",
+        "Cancel",
+        "Computer",
+        "Desktop",
+        "Eject",
+        "Forward",
+        "Home",
+        "Open",
+        "Other Locations",
+        "Recent",
+        "Text Files",
+        "bin",
+        "boot",
+        "cdrom",
+        "config-2",
+        "dev",
+        "etc",
+        "gui_distillation",
+        "home",
+        "lib",
+        "lib32",
+        "lib64",
+        "libx32",
+        "user1"
+      ],
+      "screenshot": "screenshots/step_015.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font",
+        "Close",
+        "Open",
+        "Open",
+        "Home",
+        "gui_distillation",
+        "gui_distillation",
+        "gui_distillation",
+        "Other Locations",
+        "Computer"
+      ]
+    },
+    "main_editor_blank_again": {
+      "description": "The main GNOME Text Editor window is visible again with a blank untitled document and no popovers or dialogs open. The top bar shows Open, New Document, disabled Save, the main menu, and window controls.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main Menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "New Document",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open menu arrow",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Save",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Document editor area",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Main Menu",
+        "Maximize",
+        "Minimize",
+        "New Document",
+        "Open",
+        "Open menu arrow",
+        "Save"
+      ],
+      "screenshot": "screenshots/step_016.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font",
+        "Close",
+        "Open",
+        "Open",
+        "Home",
+        "gui_distillation",
+        "gui_distillation",
+        "gui_distillation",
+        "Other Locations",
+        "Computer",
+        "Cancel"
+      ]
+    },
+    "main_menu_open_with_file_actions": {
+      "description": "The main GNOME Text Editor window is visible with the application menu open. This expanded menu includes theme selection, zoom controls, and additional file/edit/help commands not previously explored, such as New Window, Save As, Find/Replace, Print, and Document Properties.",
+      "elements": [
+        {
+          "name": "Main Menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "New Document",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open menu arrow",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Save",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Ctrl+,",
+          "type": "label",
+          "value": "Ctrl+,",
+          "enabled": true
+        },
+        {
+          "name": "Ctrl+?",
+          "type": "label",
+          "value": "Ctrl+?",
+          "enabled": true
+        },
+        {
+          "name": "Ctrl+F",
+          "type": "label",
+          "value": "Ctrl+F",
+          "enabled": true
+        },
+        {
+          "name": "Ctrl+N",
+          "type": "label",
+          "value": "Ctrl+N",
+          "enabled": true
+        },
+        {
+          "name": "Ctrl+P",
+          "type": "label",
+          "value": "Ctrl+P",
+          "enabled": true
+        },
+        {
+          "name": "Ctrl+S",
+          "type": "label",
+          "value": "Ctrl+S",
+          "enabled": true
+        },
+        {
+          "name": "F1",
+          "type": "label",
+          "value": "F1",
+          "enabled": true
+        },
+        {
+          "name": "Shift+Ctrl+S",
+          "type": "label",
+          "value": "Shift+Ctrl+S",
+          "enabled": true
+        },
+        {
+          "name": "Zoom",
+          "type": "label",
+          "value": "100%",
+          "enabled": true
+        },
+        {
+          "name": "About Text Editor",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Discard Changes",
+          "type": "menu_item",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Document Properties",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Find/Replace…",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Help",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Keyboard Shortcuts",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "New Window",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Preferences",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Print",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Save",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Save As…",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Dark theme",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        },
+        {
+          "name": "Light theme",
+          "type": "radio",
+          "value": "selected",
+          "enabled": true
+        },
+        {
+          "name": "System theme",
+          "type": "radio",
+          "value": "unselected",
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "About Text Editor",
+        "Dark theme",
+        "Discard Changes",
+        "Document Properties",
+        "Find/Replace…",
+        "Help",
+        "Keyboard Shortcuts",
+        "Light theme",
+        "Main Menu",
+        "New Document",
+        "New Window",
+        "Open",
+        "Open menu arrow",
+        "Preferences",
+        "Print",
+        "Save",
+        "Save As…",
+        "System theme",
+        "Zoom in",
+        "Zoom out"
+      ],
+      "screenshot": "screenshots/step_017.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font",
+        "Close",
+        "Open",
+        "Open",
+        "Home",
+        "gui_distillation",
+        "gui_distillation",
+        "gui_distillation",
+        "Other Locations",
+        "Computer",
+        "Cancel",
+        "Main Menu"
+      ]
+    },
+    "document_properties_dialog": {
+      "description": "A Properties dialog is open over the blank GNOME Text Editor window. It shows file metadata and document statistics for the untitled draft, with a close button in the dialog header.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close Window",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main Menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "New Document",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Save",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "0",
+          "type": "label",
+          "value": "0",
+          "enabled": true
+        },
+        {
+          "name": "0",
+          "type": "label",
+          "value": "0",
+          "enabled": true
+        },
+        {
+          "name": "0",
+          "type": "label",
+          "value": "0",
+          "enabled": true
+        },
+        {
+          "name": "0",
+          "type": "label",
+          "value": "0",
+          "enabled": true
+        },
+        {
+          "name": "All Characters",
+          "type": "label",
+          "value": "All Characters",
+          "enabled": true
+        },
+        {
+          "name": "Characters, No Spaces",
+          "type": "label",
+          "value": "Characters, No Spaces",
+          "enabled": true
+        },
+        {
+          "name": "Draft",
+          "type": "label",
+          "value": "Draft",
+          "enabled": true
+        },
+        {
+          "name": "File",
+          "type": "label",
+          "value": "File",
+          "enabled": true
+        },
+        {
+          "name": "Lines",
+          "type": "label",
+          "value": "Lines",
+          "enabled": true
+        },
+        {
+          "name": "Location",
+          "type": "label",
+          "value": "Location",
+          "enabled": true
+        },
+        {
+          "name": "Name",
+          "type": "label",
+          "value": "Name",
+          "enabled": true
+        },
+        {
+          "name": "Properties",
+          "type": "label",
+          "value": "Properties",
+          "enabled": true
+        },
+        {
+          "name": "Statistics",
+          "type": "label",
+          "value": "Statistics",
+          "enabled": true
+        },
+        {
+          "name": "Words",
+          "type": "label",
+          "value": "Words",
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Close Window",
+        "Main Menu",
+        "Maximize",
+        "Minimize",
+        "New Document",
+        "Open",
+        "Save"
+      ],
+      "screenshot": "screenshots/step_018.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font",
+        "Close",
+        "Open",
+        "Open",
+        "Home",
+        "gui_distillation",
+        "gui_distillation",
+        "gui_distillation",
+        "Other Locations",
+        "Computer",
+        "Cancel",
+        "Main Menu",
+        "Document Properties"
+      ]
+    },
+    "main_editor_blank_post_properties": {
+      "description": "The main GNOME Text Editor window is visible with a blank untitled document and no menus or dialogs open. The top bar shows Open, New Document, disabled Save, the main menu, and window controls.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main Menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "New Document",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open menu arrow",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Save",
+          "type": "button",
+          "value": null,
+          "enabled": false
+        },
+        {
+          "name": "Document editor area",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Main Menu",
+        "Maximize",
+        "Minimize",
+        "New Document",
+        "Open",
+        "Open menu arrow",
+        "Save"
+      ],
+      "screenshot": "screenshots/step_019.png",
+      "path_from_root": [
+        "Main Menu",
+        "Preferences",
+        "Custom Font details",
+        "Custom Font details",
+        "Select",
+        "Expand Custom Font",
+        "Close",
+        "Open",
+        "Open",
+        "Home",
+        "gui_distillation",
+        "gui_distillation",
+        "gui_distillation",
+        "Other Locations",
+        "Computer",
+        "Cancel",
+        "Main Menu",
+        "Document Properties",
+        "Close"
+      ]
+    }
+  },
+  "transitions": [
+    {
+      "from": "main_editor_blank",
+      "action": "Main Menu",
+      "click": [
+        518,
+        38
+      ],
+      "to": "main_menu_open"
+    },
+    {
+      "from": "main_menu_open",
+      "action": "Preferences",
+      "click": [
+        487,
+        474
+      ],
+      "to": "preferences_appearance"
+    },
+    {
+      "from": "preferences_appearance",
+      "action": "Custom Font details",
+      "click": [
+        561,
+        452
+      ],
+      "to": "preferences_appearance_custom_font_expanded"
+    },
+    {
+      "from": "preferences_appearance_custom_font_expanded",
+      "action": "Custom Font details",
+      "click": [
+        319,
+        514
+      ],
+      "to": "font_picker_dialog_open"
+    },
+    {
+      "from": "font_picker_dialog_open",
+      "action": "Select",
+      "click": [
+        364,
+        459
+      ],
+      "to": "preferences_appearance_font_selected"
+    },
+    {
+      "from": "preferences_appearance_font_selected",
+      "action": "Expand Custom Font",
+      "click": [
+        562,
+        458
+      ],
+      "to": "preferences_appearance_collapsed_font"
+    },
+    {
+      "from": "preferences_appearance_collapsed_font",
+      "action": "Close",
+      "click": [
+        612,
+        28
+      ],
+      "to": "main_editor_blank_returned"
+    },
+    {
+      "from": "main_editor_blank_returned",
+      "action": "Open",
+      "click": [
+        99,
+        37
+      ],
+      "to": "open_recent_popover_empty"
+    },
+    {
+      "from": "open_recent_popover_empty",
+      "action": "Open",
+      "click": [
+        397,
+        92
+      ],
+      "to": "file_open_dialog"
+    },
+    {
+      "from": "file_open_dialog",
+      "action": "Home",
+      "click": [
+        67,
+        61
+      ],
+      "to": "file_open_dialog_home"
+    },
+    {
+      "from": "file_open_dialog_home",
+      "action": "gui_distillation",
+      "click": [
+        262,
+        87
+      ],
+      "to": "file_open_dialog_home_folder_selected"
+    },
+    {
+      "from": "file_open_dialog_home_folder_selected",
+      "action": "gui_distillation",
+      "click": [
+        271,
+        87
+      ],
+      "to": "file_open_dialog_home_folder_opened"
+    },
+    {
+      "from": "file_open_dialog_home_folder_opened",
+      "action": "gui_distillation",
+      "click": [
+        250,
+        87
+      ],
+      "to": "file_open_dialog_home_with_up_navigation"
+    },
+    {
+      "from": "file_open_dialog_home_with_up_navigation",
+      "action": "Other Locations",
+      "click": [
+        82,
+        238
+      ],
+      "to": "file_open_dialog_other_locations"
+    },
+    {
+      "from": "file_open_dialog_other_locations",
+      "action": "Computer",
+      "click": [
+        278,
+        51
+      ],
+      "to": "file_open_dialog_computer"
+    },
+    {
+      "from": "file_open_dialog_computer",
+      "action": "Cancel",
+      "click": [
+        719,
+        356
+      ],
+      "to": "main_editor_blank_again"
+    },
+    {
+      "from": "main_editor_blank_again",
+      "action": "Main Menu",
+      "click": [
+        518,
+        38
+      ],
+      "to": "main_menu_open_with_file_actions"
+    },
+    {
+      "from": "main_menu_open_with_file_actions",
+      "action": "Document Properties",
+      "click": [
+        500,
+        430
+      ],
+      "to": "document_properties_dialog"
+    },
+    {
+      "from": "document_properties_dialog",
+      "action": "Close",
+      "click": [
+        332,
+        29
+      ],
+      "to": "main_editor_blank_post_properties"
+    }
+  ],
+  "metrics": {
+    "total_screens": 20,
+    "total_steps": 20,
+    "unique_elements": 147,
+    "tokens_total": 75781,
+    "discovery_rate": 1.0,
+    "elements_per_step": 7.35,
+    "elements_per_1k_tokens": 1.94,
+    "cost_usd": 1.0982,
+    "elements_per_dollar": 133.9,
+    "model": "gpt-5.4"
+  }
+}

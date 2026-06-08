@@ -1,0 +1,3286 @@
+{
+  "app": "eog",
+  "exploration_date": "2026-05-11",
+  "model": "gpt-5.4",
+  "total_steps": 15,
+  "total_screens": 15,
+  "total_transitions": 14,
+  "usage": {
+    "tokens_input": 46196,
+    "tokens_output": 11514,
+    "tokens_total": 57710
+  },
+  "screens": {
+    "main_window_with_properties": {
+      "description": "The main Eye of GNOME window is open showing an image and a right-side Properties pane. The top bar includes zoom controls, fullscreen, and a hamburger main menu.",
+      "elements": [
+        {
+          "name": "Close properties",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close window",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom level",
+          "type": "dropdown",
+          "value": "100%",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": false
+        },
+        {
+          "name": "Camera",
+          "type": "label",
+          "value": "Camera",
+          "enabled": false
+        },
+        {
+          "name": "Date",
+          "type": "label",
+          "value": "Date",
+          "enabled": false
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": false
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "File Size 1.1 kB",
+          "enabled": true
+        },
+        {
+          "name": "Focal Length",
+          "type": "label",
+          "value": "Focal Length",
+          "enabled": false
+        },
+        {
+          "name": "ISO",
+          "type": "label",
+          "value": "ISO",
+          "enabled": false
+        },
+        {
+          "name": "Metering",
+          "type": "label",
+          "value": "Metering",
+          "enabled": false
+        },
+        {
+          "name": "Properties",
+          "type": "label",
+          "value": "Properties",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size 400 × 300 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Time",
+          "type": "label",
+          "value": "Time",
+          "enabled": false
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type PNG image",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "Folder",
+          "type": "link",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Image canvas",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close properties",
+        "Close window",
+        "Folder",
+        "Fullscreen",
+        "Main menu",
+        "Maximize",
+        "Minimize",
+        "Zoom in",
+        "Zoom level",
+        "Zoom out"
+      ],
+      "screenshot": "screenshots/step_000.png",
+      "path_from_root": []
+    },
+    "main_menu_open": {
+      "description": "The Eye of GNOME main window is visible with the image and Properties sidebar, and the hamburger main menu is open as a dropdown. The menu reveals several top-level commands including Open, Save, slideshow options, and a Show submenu.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close Properties",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom level",
+          "type": "dropdown",
+          "value": "100%",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": false
+        },
+        {
+          "name": "Camera",
+          "type": "label",
+          "value": "Camera",
+          "enabled": false
+        },
+        {
+          "name": "Date",
+          "type": "label",
+          "value": "Date",
+          "enabled": false
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": false
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "File Size 1.1 kB",
+          "enabled": true
+        },
+        {
+          "name": "Focal Length",
+          "type": "label",
+          "value": "Focal Length",
+          "enabled": false
+        },
+        {
+          "name": "Folder",
+          "type": "label",
+          "value": "Folder tmp",
+          "enabled": true
+        },
+        {
+          "name": "ISO",
+          "type": "label",
+          "value": "ISO",
+          "enabled": false
+        },
+        {
+          "name": "Metering",
+          "type": "label",
+          "value": "Metering",
+          "enabled": false
+        },
+        {
+          "name": "Properties",
+          "type": "label",
+          "value": "Properties",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size 400 × 300 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Time",
+          "type": "label",
+          "value": "Time",
+          "enabled": false
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type PNG image",
+          "enabled": true
+        },
+        {
+          "name": "test",
+          "type": "label",
+          "value": "test",
+          "enabled": true
+        },
+        {
+          "name": "tmp",
+          "type": "link",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Image Properties",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open With…",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Open…",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Print…",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Save",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Save As…",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Set as Wallpaper",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Show",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Show Presenter",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Slideshow",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Slideshow checkbox",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Close Properties",
+        "Image Properties",
+        "Main menu",
+        "Maximize",
+        "Minimize",
+        "Open With…",
+        "Open…",
+        "Print…",
+        "Save",
+        "Save As…",
+        "Set as Wallpaper",
+        "Show",
+        "Show Presenter",
+        "Slideshow",
+        "Slideshow checkbox",
+        "Zoom in",
+        "Zoom level",
+        "Zoom out",
+        "tmp"
+      ],
+      "screenshot": "screenshots/step_001.png",
+      "path_from_root": [
+        "Main menu"
+      ]
+    },
+    "show_submenu_open": {
+      "description": "The Eye of GNOME main window remains open with the Properties side pane visible, and the Show submenu is expanded from the main menu. The submenu offers visibility toggles for Side Pane, Image Gallery, and Status Bar.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close submenu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom level",
+          "type": "dropdown",
+          "value": "100%",
+          "enabled": true
+        },
+        {
+          "name": "/home/oai/share",
+          "type": "label",
+          "value": "/home/oai/share",
+          "enabled": true
+        },
+        {
+          "name": "1000 pixels",
+          "type": "label",
+          "value": "1000 pixels",
+          "enabled": true
+        },
+        {
+          "name": "13.5 kB",
+          "type": "label",
+          "value": "13.5 kB",
+          "enabled": true
+        },
+        {
+          "name": "600 pixels",
+          "type": "label",
+          "value": "600 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": false
+        },
+        {
+          "name": "Camera",
+          "type": "label",
+          "value": "Camera",
+          "enabled": false
+        },
+        {
+          "name": "Date",
+          "type": "label",
+          "value": "Date",
+          "enabled": false
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": false
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "File Size",
+          "enabled": true
+        },
+        {
+          "name": "Focal Length",
+          "type": "label",
+          "value": "Focal Length",
+          "enabled": false
+        },
+        {
+          "name": "Folder",
+          "type": "label",
+          "value": "Folder",
+          "enabled": true
+        },
+        {
+          "name": "Height",
+          "type": "label",
+          "value": "Height",
+          "enabled": true
+        },
+        {
+          "name": "ISO",
+          "type": "label",
+          "value": "ISO",
+          "enabled": false
+        },
+        {
+          "name": "Metering",
+          "type": "label",
+          "value": "Metering",
+          "enabled": false
+        },
+        {
+          "name": "PNG",
+          "type": "label",
+          "value": "PNG",
+          "enabled": true
+        },
+        {
+          "name": "Time",
+          "type": "label",
+          "value": "Time",
+          "enabled": false
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type",
+          "enabled": true
+        },
+        {
+          "name": "Width",
+          "type": "label",
+          "value": "Width",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "Image Gallery",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Show",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Side Pane",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Status Bar",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image canvas",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Properties pane",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image Gallery checkbox",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        },
+        {
+          "name": "Side Pane checkbox",
+          "type": "toggle",
+          "value": "on",
+          "enabled": true
+        },
+        {
+          "name": "Status Bar checkbox",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Close submenu",
+        "Fullscreen",
+        "Image Gallery",
+        "Image Gallery checkbox",
+        "Main menu",
+        "Maximize",
+        "Minimize",
+        "Show",
+        "Side Pane",
+        "Side Pane checkbox",
+        "Status Bar",
+        "Status Bar checkbox",
+        "Zoom in",
+        "Zoom level",
+        "Zoom out"
+      ],
+      "screenshot": "screenshots/step_002.png",
+      "path_from_root": [
+        "Main menu",
+        "Show"
+      ]
+    },
+    "show_submenu_with_gallery_open": {
+      "description": "The Eye of GNOME window shows the image with both the Properties side pane and the bottom Image Gallery visible. The Show submenu is open, listing visibility toggles for Side Pane, Image Gallery, and Status Bar.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close submenu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Next image",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Previous image",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom level",
+          "type": "dropdown",
+          "value": "58%",
+          "enabled": true
+        },
+        {
+          "name": "100 pixels",
+          "type": "label",
+          "value": "100 pixels",
+          "enabled": true
+        },
+        {
+          "name": "100 pixels",
+          "type": "label",
+          "value": "100 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": false
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": false
+        },
+        {
+          "name": "Height",
+          "type": "label",
+          "value": "Height",
+          "enabled": true
+        },
+        {
+          "name": "Width",
+          "type": "label",
+          "value": "Width",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "Back",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image Gallery",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Show",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Side Pane",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Status Bar",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Gallery scrollbar",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image canvas",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image gallery",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Properties pane",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 1",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 2",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 3",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 4",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 5",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image Gallery checked",
+          "type": "toggle",
+          "value": "on",
+          "enabled": true
+        },
+        {
+          "name": "Side Pane checked",
+          "type": "toggle",
+          "value": "on",
+          "enabled": true
+        },
+        {
+          "name": "Status Bar checked",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Back",
+        "Close",
+        "Close submenu",
+        "Fullscreen",
+        "Image Gallery",
+        "Image Gallery checked",
+        "Main menu",
+        "Maximize",
+        "Minimize",
+        "Next image",
+        "Previous image",
+        "Show",
+        "Side Pane",
+        "Side Pane checked",
+        "Status Bar",
+        "Status Bar checked",
+        "Zoom in",
+        "Zoom level",
+        "Zoom out"
+      ],
+      "screenshot": "screenshots/step_003.png",
+      "path_from_root": [
+        "Main menu",
+        "Show",
+        "Image Gallery"
+      ]
+    },
+    "show_submenu_with_gallery_statusbar_off": {
+      "description": "The Eye of GNOME window shows the image with the Properties side pane and bottom image gallery visible. The Show submenu is open, and Status Bar is now unchecked while Side Pane and Image Gallery remain enabled.",
+      "elements": [
+        {
+          "name": "Back",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close submenu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Next thumbnail",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Previous thumbnail",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom level",
+          "type": "dropdown",
+          "value": "58%",
+          "enabled": true
+        },
+        {
+          "name": "/home/oai/share",
+          "type": "label",
+          "value": "/home/oai/share",
+          "enabled": true
+        },
+        {
+          "name": "1000 pixels",
+          "type": "label",
+          "value": "1000 pixels",
+          "enabled": true
+        },
+        {
+          "name": "1000 pixels",
+          "type": "label",
+          "value": "1000 pixels",
+          "enabled": true
+        },
+        {
+          "name": "13.5 kB",
+          "type": "label",
+          "value": "13.5 kB",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": true
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": true
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "File Size",
+          "enabled": true
+        },
+        {
+          "name": "Folder",
+          "type": "label",
+          "value": "Folder",
+          "enabled": true
+        },
+        {
+          "name": "Height",
+          "type": "label",
+          "value": "Height",
+          "enabled": true
+        },
+        {
+          "name": "PNG",
+          "type": "label",
+          "value": "PNG",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type",
+          "enabled": true
+        },
+        {
+          "name": "Width",
+          "type": "label",
+          "value": "Width",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "Show",
+          "type": "menu_item",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image gallery",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image viewer area",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Properties pane",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 1",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 2",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 3",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 4",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 5",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image Gallery",
+          "type": "toggle",
+          "value": "on",
+          "enabled": true
+        },
+        {
+          "name": "Side Pane",
+          "type": "toggle",
+          "value": "on",
+          "enabled": true
+        },
+        {
+          "name": "Status Bar",
+          "type": "toggle",
+          "value": "off",
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Back",
+        "Close",
+        "Close submenu",
+        "Fullscreen",
+        "Image Gallery",
+        "Main menu",
+        "Maximize",
+        "Minimize",
+        "Next thumbnail",
+        "Previous thumbnail",
+        "Show",
+        "Side Pane",
+        "Status Bar",
+        "Zoom in",
+        "Zoom level",
+        "Zoom out"
+      ],
+      "screenshot": "screenshots/step_004.png",
+      "path_from_root": [
+        "Main menu",
+        "Show",
+        "Image Gallery",
+        "Status Bar"
+      ]
+    },
+    "main_window_gallery_properties_no_statusbar": {
+      "description": "The main Eye of GNOME window is visible with the image, the right-side Properties pane, and the bottom Image Gallery. The status bar is hidden and no menu is currently open.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close Properties",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Left gallery scroll",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Restore",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Right gallery scroll",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom",
+          "type": "dropdown",
+          "value": "58%",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": true
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": true
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "File Size 1.1 kB",
+          "enabled": true
+        },
+        {
+          "name": "Folder",
+          "type": "label",
+          "value": "Folder",
+          "enabled": true
+        },
+        {
+          "name": "Properties",
+          "type": "label",
+          "value": "Properties",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size 400 × 300 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type PNG image",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "tmp",
+          "type": "link",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Image canvas",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 1",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 2",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 3",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 4",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 5",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Close Properties",
+        "Fullscreen",
+        "Left gallery scroll",
+        "Main menu",
+        "Minimize",
+        "Restore",
+        "Right gallery scroll",
+        "Zoom",
+        "Zoom in",
+        "Zoom out",
+        "tmp"
+      ],
+      "screenshot": "screenshots/step_005.png",
+      "path_from_root": [
+        "Main menu",
+        "Show",
+        "Image Gallery",
+        "Status Bar",
+        "Side Pane"
+      ]
+    },
+    "main_window_gallery_no_statusbar_no_menu": {
+      "description": "The main Eye of GNOME window shows the image with the Properties sidebar and bottom image gallery visible, while the status bar remains hidden. No menu is currently open.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close Properties",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Gallery Left",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Gallery Right",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom In",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom Out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom",
+          "type": "dropdown",
+          "value": "58%",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": true
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": true
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "File Size 1.1 kB",
+          "enabled": true
+        },
+        {
+          "name": "Folder",
+          "type": "label",
+          "value": "Folder tmp",
+          "enabled": true
+        },
+        {
+          "name": "Properties",
+          "type": "label",
+          "value": "Properties",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size 400 × 300 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type PNG image",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "tmp",
+          "type": "link",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Image canvas",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Properties Scrollbar",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 1",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 2",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 3",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 4",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 5",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Close Properties",
+        "Fullscreen",
+        "Gallery Left",
+        "Gallery Right",
+        "Main menu",
+        "Maximize",
+        "Minimize",
+        "Zoom",
+        "Zoom In",
+        "Zoom Out",
+        "tmp"
+      ],
+      "screenshot": "screenshots/step_006.png",
+      "path_from_root": [
+        "Main menu",
+        "Show",
+        "Image Gallery",
+        "Status Bar",
+        "Side Pane",
+        "Main menu"
+      ]
+    },
+    "main_window_gallery_properties_no_statusbar_restored": {
+      "description": "The main Eye of GNOME window shows the image with the Properties sidebar on the right and the Image Gallery strip at the bottom. No menu is open, and the status bar remains hidden.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close Properties",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Next gallery item",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Previous gallery item",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom",
+          "type": "dropdown",
+          "value": "58%",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": true
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": true
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "File Size 1.1 kB",
+          "enabled": true
+        },
+        {
+          "name": "Folder",
+          "type": "label",
+          "value": "Folder tmp",
+          "enabled": true
+        },
+        {
+          "name": "Image Gallery",
+          "type": "label",
+          "value": "Image Gallery",
+          "enabled": true
+        },
+        {
+          "name": "Properties",
+          "type": "label",
+          "value": "Properties",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size 400 × 300 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type PNG image",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "tmp",
+          "type": "link",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Image view",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Properties scroll bar",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 1",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 2",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 3",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 4",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 5",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Close Properties",
+        "Fullscreen",
+        "Main menu",
+        "Maximize",
+        "Minimize",
+        "Next gallery item",
+        "Previous gallery item",
+        "Zoom",
+        "Zoom in",
+        "Zoom out",
+        "tmp"
+      ],
+      "screenshot": "screenshots/step_007.png",
+      "path_from_root": [
+        "Main menu",
+        "Show",
+        "Image Gallery",
+        "Status Bar",
+        "Side Pane",
+        "Main menu",
+        "Main menu"
+      ]
+    },
+    "main_window_gallery_properties_no_statusbar_current": {
+      "description": "The main Eye of GNOME window shows the image with the Properties sidebar on the right and the Image Gallery strip at the bottom. No menu is open, and the status bar is hidden.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close Properties",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Gallery next",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Gallery previous",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom level",
+          "type": "dropdown",
+          "value": "58%",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": true
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": true
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "File Size 1.1 kB",
+          "enabled": true
+        },
+        {
+          "name": "Folder",
+          "type": "label",
+          "value": "Folder",
+          "enabled": true
+        },
+        {
+          "name": "Properties",
+          "type": "label",
+          "value": "Properties",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size 400 × 300 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type PNG image",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "tmp",
+          "type": "link",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Image Gallery",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image view",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Properties scroll bar",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 1",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 2",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 3",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 4",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 5",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Close Properties",
+        "Fullscreen",
+        "Gallery next",
+        "Gallery previous",
+        "Main menu",
+        "Maximize",
+        "Minimize",
+        "Zoom in",
+        "Zoom level",
+        "Zoom out",
+        "tmp"
+      ],
+      "screenshot": "screenshots/step_008.png",
+      "path_from_root": [
+        "Main menu",
+        "Show",
+        "Image Gallery",
+        "Status Bar",
+        "Side Pane",
+        "Main menu",
+        "Main menu",
+        "Main menu"
+      ]
+    },
+    "main_window_gallery_properties_no_statusbar_sidepane_restored": {
+      "description": "The main Eye of GNOME window shows the image with the Properties pane visible on the right and the Image Gallery visible at the bottom; the status bar is hidden. No menu or popup is currently open.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close Properties",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Left gallery navigation",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Right gallery navigation",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom level",
+          "type": "dropdown",
+          "value": "58%",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": false
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": false
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "File Size 1.1 kB",
+          "enabled": true
+        },
+        {
+          "name": "Folder",
+          "type": "label",
+          "value": "Folder",
+          "enabled": true
+        },
+        {
+          "name": "Properties",
+          "type": "label",
+          "value": "Properties",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size 400 × 300 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type PNG image",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "tmp",
+          "type": "link",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Image view",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Properties pane scrollbar",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 1",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 2",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 3",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 4",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 5",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Close Properties",
+        "Fullscreen",
+        "Left gallery navigation",
+        "Main menu",
+        "Maximize",
+        "Minimize",
+        "Right gallery navigation",
+        "Zoom in",
+        "Zoom level",
+        "Zoom out",
+        "tmp"
+      ],
+      "screenshot": "screenshots/step_009.png",
+      "path_from_root": [
+        "Main menu",
+        "Show",
+        "Image Gallery",
+        "Status Bar",
+        "Side Pane",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu"
+      ]
+    },
+    "main_window_gallery_properties_no_statusbar_sidepane_visible": {
+      "description": "The main Eye of GNOME window shows the image with the Properties pane on the right and the Image Gallery at the bottom, while the status bar is hidden. No menu or dialog is currently open.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close Properties",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Next image",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Previous image",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "58%",
+          "type": "dropdown",
+          "value": "58%",
+          "enabled": true
+        },
+        {
+          "name": "1.1 kB",
+          "type": "label",
+          "value": "1.1 kB",
+          "enabled": true
+        },
+        {
+          "name": "400 × 300 pixels",
+          "type": "label",
+          "value": "400 × 300 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": true
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": true
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "File Size",
+          "enabled": true
+        },
+        {
+          "name": "Folder",
+          "type": "label",
+          "value": "Folder",
+          "enabled": true
+        },
+        {
+          "name": "PNG image",
+          "type": "label",
+          "value": "PNG image",
+          "enabled": true
+        },
+        {
+          "name": "Properties",
+          "type": "label",
+          "value": "Properties",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "tmp",
+          "type": "link",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Gallery scrollbar",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image view",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 1",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 2",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 3",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 4",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 5",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "58%",
+        "Close",
+        "Close Properties",
+        "Fullscreen",
+        "Main menu",
+        "Maximize",
+        "Minimize",
+        "Next image",
+        "Previous image",
+        "Zoom in",
+        "Zoom out",
+        "tmp"
+      ],
+      "screenshot": "screenshots/step_010.png",
+      "path_from_root": [
+        "Main menu",
+        "Show",
+        "Image Gallery",
+        "Status Bar",
+        "Side Pane",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu"
+      ]
+    },
+    "main_window_gallery_properties_no_statusbar_with_thumbnails": {
+      "description": "The main Eye of GNOME window shows the image with the Properties pane on the right and the Image Gallery strip at the bottom. The status bar is hidden and no menu or dialog is open.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close Properties",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Gallery next",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Gallery previous",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom level",
+          "type": "dropdown",
+          "value": "58%",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": true
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": true
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "1.1 kB",
+          "enabled": true
+        },
+        {
+          "name": "Folder",
+          "type": "label",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Properties",
+          "type": "label",
+          "value": "Properties",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "400 × 300 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "PNG image",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "tmp",
+          "type": "link",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Image view",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 1",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 2",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 3",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 4",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 5",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Close Properties",
+        "Fullscreen",
+        "Gallery next",
+        "Gallery previous",
+        "Main menu",
+        "Maximize",
+        "Minimize",
+        "Zoom in",
+        "Zoom level",
+        "Zoom out",
+        "tmp"
+      ],
+      "screenshot": "screenshots/step_011.png",
+      "path_from_root": [
+        "Main menu",
+        "Show",
+        "Image Gallery",
+        "Status Bar",
+        "Side Pane",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu"
+      ]
+    },
+    "main_window_gallery_properties_no_statusbar_with_scrollable_properties": {
+      "description": "The main Eye of GNOME window is visible with the image centered, the Properties pane open on the right, and the Image Gallery visible at the bottom while the status bar remains hidden. No menu or dialog is currently open.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close Properties",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Next thumbnail strip",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Previous thumbnail strip",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom",
+          "type": "dropdown",
+          "value": "58%",
+          "enabled": true
+        },
+        {
+          "name": "1.1 kB",
+          "type": "label",
+          "value": "1.1 kB",
+          "enabled": true
+        },
+        {
+          "name": "400 × 300 pixels",
+          "type": "label",
+          "value": "400 × 300 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": true
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": true
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "File Size",
+          "enabled": true
+        },
+        {
+          "name": "Folder",
+          "type": "label",
+          "value": "Folder",
+          "enabled": true
+        },
+        {
+          "name": "PNG image",
+          "type": "label",
+          "value": "PNG image",
+          "enabled": true
+        },
+        {
+          "name": "Properties",
+          "type": "label",
+          "value": "Properties",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "tmp",
+          "type": "link",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Image Gallery",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image view",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Properties scrollbar",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 1",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 2",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 3",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 4",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 5",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Close Properties",
+        "Fullscreen",
+        "Main menu",
+        "Maximize",
+        "Minimize",
+        "Next thumbnail strip",
+        "Previous thumbnail strip",
+        "Zoom",
+        "Zoom in",
+        "Zoom out",
+        "tmp"
+      ],
+      "screenshot": "screenshots/step_012.png",
+      "path_from_root": [
+        "Main menu",
+        "Show",
+        "Image Gallery",
+        "Status Bar",
+        "Side Pane",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu"
+      ]
+    },
+    "main_window_gallery_properties_no_statusbar_full_view": {
+      "description": "The main Eye of GNOME window shows an image with the Properties pane on the right and the Image Gallery at the bottom; the status bar is hidden. No menu or dialog is currently open.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close Properties",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Maximize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Next thumbnail",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Previous thumbnail",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom level",
+          "type": "dropdown",
+          "value": "58%",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": false
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": false
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "File Size 1.1 kB",
+          "enabled": true
+        },
+        {
+          "name": "Folder",
+          "type": "label",
+          "value": "Folder",
+          "enabled": true
+        },
+        {
+          "name": "Properties",
+          "type": "label",
+          "value": "Properties",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "Size 400 × 300 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "Type PNG image",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "tmp",
+          "type": "link",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Image Gallery",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image view",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Properties scrollbar",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 1",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 2",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 3",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 4",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 5",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Close Properties",
+        "Fullscreen",
+        "Main menu",
+        "Maximize",
+        "Minimize",
+        "Next thumbnail",
+        "Previous thumbnail",
+        "Zoom in",
+        "Zoom level",
+        "Zoom out",
+        "tmp"
+      ],
+      "screenshot": "screenshots/step_013.png",
+      "path_from_root": [
+        "Main menu",
+        "Show",
+        "Image Gallery",
+        "Status Bar",
+        "Side Pane",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu"
+      ]
+    },
+    "main_window_gallery_properties_no_statusbar_baseline": {
+      "description": "The main Eye of GNOME window shows an image with the Properties pane on the right and the Image Gallery at the bottom; the status bar is hidden. No menu or dialog is currently open.",
+      "elements": [
+        {
+          "name": "Close",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Close Properties",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Fullscreen",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Gallery next",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Gallery previous",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Main menu",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Minimize",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Restore",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom in",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom out",
+          "type": "button",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Zoom level",
+          "type": "dropdown",
+          "value": "58%",
+          "enabled": true
+        },
+        {
+          "name": "Aperture",
+          "type": "label",
+          "value": "Aperture",
+          "enabled": true
+        },
+        {
+          "name": "Exposure",
+          "type": "label",
+          "value": "Exposure",
+          "enabled": true
+        },
+        {
+          "name": "File Size",
+          "type": "label",
+          "value": "1.1 kB",
+          "enabled": true
+        },
+        {
+          "name": "Folder",
+          "type": "label",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Properties",
+          "type": "label",
+          "value": "Properties",
+          "enabled": true
+        },
+        {
+          "name": "Size",
+          "type": "label",
+          "value": "400 × 300 pixels",
+          "enabled": true
+        },
+        {
+          "name": "Type",
+          "type": "label",
+          "value": "PNG image",
+          "enabled": true
+        },
+        {
+          "name": "test_image.png",
+          "type": "label",
+          "value": "test_image.png",
+          "enabled": true
+        },
+        {
+          "name": "tmp",
+          "type": "link",
+          "value": "tmp",
+          "enabled": true
+        },
+        {
+          "name": "Displayed image",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Image canvas",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Properties scroll bar",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 1",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 2",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 3",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 4",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        },
+        {
+          "name": "Thumbnail 5",
+          "type": "other",
+          "value": null,
+          "enabled": true
+        }
+      ],
+      "buttons": [
+        "Close",
+        "Close Properties",
+        "Fullscreen",
+        "Gallery next",
+        "Gallery previous",
+        "Main menu",
+        "Minimize",
+        "Restore",
+        "Zoom in",
+        "Zoom level",
+        "Zoom out",
+        "tmp"
+      ],
+      "screenshot": "screenshots/step_014.png",
+      "path_from_root": [
+        "Main menu",
+        "Show",
+        "Image Gallery",
+        "Status Bar",
+        "Side Pane",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu",
+        "Main menu"
+      ]
+    }
+  },
+  "transitions": [
+    {
+      "from": "main_window_with_properties",
+      "action": "Main menu",
+      "click": [
+        800,
+        356
+      ],
+      "to": "main_menu_open"
+    },
+    {
+      "from": "main_menu_open",
+      "action": "Show",
+      "click": [
+        679,
+        640
+      ],
+      "to": "show_submenu_open"
+    },
+    {
+      "from": "show_submenu_open",
+      "action": "Image Gallery",
+      "click": [
+        790,
+        474
+      ],
+      "to": "show_submenu_with_gallery_open"
+    },
+    {
+      "from": "show_submenu_with_gallery_open",
+      "action": "Status Bar",
+      "click": [
+        859,
+        695
+      ],
+      "to": "show_submenu_with_gallery_statusbar_off"
+    },
+    {
+      "from": "show_submenu_with_gallery_statusbar_off",
+      "action": "Side Pane",
+      "click": [
+        858,
+        640
+      ],
+      "to": "main_window_gallery_properties_no_statusbar"
+    },
+    {
+      "from": "main_window_gallery_properties_no_statusbar",
+      "action": "Main menu",
+      "click": [
+        799,
+        548
+      ],
+      "to": "main_window_gallery_no_statusbar_no_menu"
+    },
+    {
+      "from": "main_window_gallery_no_statusbar_no_menu",
+      "action": "Main menu",
+      "click": [
+        800,
+        548
+      ],
+      "to": "main_window_gallery_properties_no_statusbar_restored"
+    },
+    {
+      "from": "main_window_gallery_properties_no_statusbar_restored",
+      "action": "Main menu",
+      "click": [
+        800,
+        547
+      ],
+      "to": "main_window_gallery_properties_no_statusbar_current"
+    },
+    {
+      "from": "main_window_gallery_properties_no_statusbar_current",
+      "action": "Main menu",
+      "click": [
+        800,
+        550
+      ],
+      "to": "main_window_gallery_properties_no_statusbar_sidepane_restored"
+    },
+    {
+      "from": "main_window_gallery_properties_no_statusbar_sidepane_restored",
+      "action": "Main menu",
+      "click": [
+        800,
+        560
+      ],
+      "to": "main_window_gallery_properties_no_statusbar_sidepane_visible"
+    },
+    {
+      "from": "main_window_gallery_properties_no_statusbar_sidepane_visible",
+      "action": "Main menu",
+      "click": [
+        800,
+        548
+      ],
+      "to": "main_window_gallery_properties_no_statusbar_with_thumbnails"
+    },
+    {
+      "from": "main_window_gallery_properties_no_statusbar_with_thumbnails",
+      "action": "Main menu",
+      "click": [
+        800,
+        547
+      ],
+      "to": "main_window_gallery_properties_no_statusbar_with_scrollable_properties"
+    },
+    {
+      "from": "main_window_gallery_properties_no_statusbar_with_scrollable_properties",
+      "action": "Main menu",
+      "click": [
+        800,
+        546
+      ],
+      "to": "main_window_gallery_properties_no_statusbar_full_view"
+    },
+    {
+      "from": "main_window_gallery_properties_no_statusbar_full_view",
+      "action": "Main menu",
+      "click": [
+        800,
+        521
+      ],
+      "to": "main_window_gallery_properties_no_statusbar_baseline"
+    }
+  ],
+  "metrics": {
+    "total_screens": 15,
+    "total_steps": 15,
+    "unique_elements": 104,
+    "tokens_total": 57710,
+    "discovery_rate": 1.0,
+    "elements_per_step": 6.93,
+    "elements_per_1k_tokens": 1.8,
+    "cost_usd": 0.9225,
+    "elements_per_dollar": 112.7,
+    "model": "gpt-5.4"
+  }
+}

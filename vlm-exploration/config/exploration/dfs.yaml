@@ -1,0 +1,5 @@
+dfs:
+  branching_factor: 3
+  max_depth: 3
+  max_steps_per_task: 10
+  replay_delay: 0.3

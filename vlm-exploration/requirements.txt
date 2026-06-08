@@ -1,0 +1,28 @@
+# ===============================
+# Core runtime
+# ===============================
+
+pydantic>=2.6,<3.0
+PyYAML>=6.0
+pyautogui>=0.9.54
+Pillow>=10.0          # screenshots, dHash, run visualizations (visualize_run.py)
+
+# ===============================
+# Testing
+# ===============================
+
+pytest>=7.4
+
+# ===============================
+# Optional (recommended soon)
+# ===============================
+
+# Perceptual hashing — dHash for UI state change detection (automation_dhash.py, automation_a11y.py)
+imagehash>=4.3
+
+# If later you use OpenCV for screen diffs
+# opencv-python>=4.8
+
+pynput>=1.7.6
+openai
+python-dotenv

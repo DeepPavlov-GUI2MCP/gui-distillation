@@ -1,0 +1,456 @@
+# config/settings.yaml
+# Global runtime configuration for the GUI Distillation project.
+#
+# This file contains RUNTIME configuration only.
+# Infrastructure setup (package installation, Xvfb command line)
+# is in scripts/setup/*.sh and NOT duplicated here.
+
+# =========================================================
+# 0. METADATA
+# =========================================================
+metadata:
+  project_name: "GUI Distillation"
+  phase: "0.3"
+  created: "2026-02-19"
+  author: "RT"
+  description: "Runtime configuration for all phases (single file with profiles)"
+
+# =========================================================
+# RUNTIME PROFILE
+# =========================================================
+runtime:
+  # Which environment is currently running the code:
+  # - vm: exploration / data collection in Ubuntu VM
+  # - host: training / heavy compute on host (Manjaro)
+  profile: "vm"
+
+# =========================================================
+# 1. PROJECT PATHS (used by Python code)
+# =========================================================
+paths:
+  repo_root: "."
+
+  data_dir: "data"
+  raw_data: "data/raw"
+  datasets: "data/datasets"
+  screenshots: "data/screenshots"
+  models_dir: "models"
+  logs_dir: "logs"
+  results_dir: "results"
+
+  app_configs: "config/apps"
+  teacher_configs: "config/teachers"
+  prompts_dir: "config/prompts"
+
+  exploration_runs: "data/exploration"
+  visualizations: "results/visualizations"
+
+# =========================================================
+# 2. ENVIRONMENT (runtime settings only)
+# =========================================================
+environment:
+  display:
+    # Python code expects X11 for deterministic GUI automation.
+    server: "X11"
+    required_session_type: "x11"
+
+    # Whether code is expected to target a virtual display (Xvfb) by default.
+    virtual: true
+    display_num: ":99"
+
+    # Screen geometry required for:
+    # - validating absolute coordinates
+    # - converting normalized <-> absolute
+    screen:
+      width: 1280
+      height: 1024
+      depth: 24
+
+  vm:
+    type: "qemu"
+    host_os: "Manjaro"
+    guest_os: "Ubuntu 22.04"
+    shared_folder: "/mnt/repo"
+
+# =========================================================
+# 3. TARGET APPLICATION
+# =========================================================
+app:
+  default: "gnome-calculator"
+
+  available:
+    - name: "gnome-calculator"
+      version: "unknown"
+      window_title: "Calculator"
+      config: "calculator.yaml"
+      enabled: true
+
+    - name: "gnome-mines"
+      version: "unknown"
+      window_title: "Mines"
+      config: "mines.yaml"
+      enabled: false
+
+  gnome-calculator:
+    name: "gnome-calculator"
+    window_title: "Calculator"
+
+    launch:
+      timeout_seconds: 10
+      wait_after_launch: 2
+      retry_count: 2
+      retry_delay: 2
+
+    close:
+      graceful_timeout: 5
+      force_kill: true
+
+# =========================================================
+# 4. AUTOMATION SETTINGS (pyautogui timing, not commands)
+# =========================================================
+automation:
+  pyautogui:
+    failsafe: true
+    pause: 0.5
+
+  timing:
+    action_delay: 0.5
+    screenshot_delay: 1.0
+    launch_delay: 2.0
+    between_steps: 0.2
+    double_click_interval: 0.3
+    move_duration: 0.5
+    type_delay: 0.1
+    poll_interval: 0.1            # polling interval (s) while waiting for graceful app close
+    kill_wait: 2.0                # timeout (s) for process.wait() after SIGKILL
+
+  screenshots:
+    format: "png"                 # png or jpg
+    quality: 95                   # jpeg quality (1-95), only for jpg
+    save_before: true
+    save_after: true
+    include_timestamp: false
+    naming_pattern: "step_{step_id:04d}_{suffix}.{ext}"
+
+  hash:
+    algorithm: "md5"              # md5, sha1, sha256
+    compare: true
+    save_dhash: true              # also compute and save dHash per step
+    dhash_size: 8                 # dHash grid size (8 → 64-bit hash)
+
+  mouse:
+    default_button: "left"
+    coordinate_system: "absolute" # absolute or normalized
+    validate_bounds: true
+
+  random:
+    margin: 50                    # pixel margin from screen edges for whole-screen random clicks
+
+  random_buttons:
+    padding: 15                   # pixel padding around button-area bbox for --random-buttons mode
+
+  keyboard:
+    default_key: "enter"
+
+# =========================================================
+# 5. LOGGING
+# =========================================================
+# Logging is configured via logging.basicConfig() in each CLI entrypoint.
+# Level is controlled by the --verbose flag (DEBUG) or defaults to INFO.
+# Format is hardcoded in each entrypoint.
+# File logging and log rotation are not implemented yet.
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# =========================================================
+# 6. DATA MANAGEMENT
+# =========================================================
+data:
+  naming:
+    step_pattern: "step_{step_id:04d}_{suffix}.{ext}"
+    run_pattern: "run_{timestamp}"
+    dataset_pattern: "{skill}_{version}_{timestamp}"
+
+  step_files:
+    before: "before.png"
+    after: "after.png"
+    action: "action.json"
+    save_action: true             # whether automation.py writes action.json per step
+    metadata: "metadata.json"
+    observation: "observation.json"
+    observation_grounded: "observation_grounded.json"
+    delta: "delta.json"
+
+  dataset_formats:
+    - "jsonl"
+    - "parquet"
+
+  split:
+    train: 0.7
+    validation: 0.15
+    test: 0.15
+    seed: 42
+    stratified: true
+    screen_based: true
+
+# =========================================================
+# 7. TEACHER DEFAULTS (Phase 1)
+# =========================================================
+teacher:
+  default: "gpt-4v"
+
+  available:
+    - name: "gpt-4v"
+      type: "api"
+      provider: "openai"
+      max_tokens: 1000
+      temperature: 0.0
+      enabled: true
+
+    - name: "qwen-vl-7b"
+      type: "local"
+      path: "models/qwen-vl-7b"
+      device: "cuda"
+      enabled: false
+
+    - name: "internvl2"
+      type: "local"
+      path: "models/internvl2"
+      device: "cuda"
+      enabled: false
+
+  api:
+    timeout: 30
+    max_retries: 3
+    retry_delay: 2
+    rate_limit: 10
+
+  local:
+    batch_size: 1
+    device: "cuda"
+    precision: "fp16"
+    use_cache: true
+
+# =========================================================
+# 8. EXPLORATION PROTOCOL (Phase 1)
+# =========================================================
+exploration:
+  strategy:
+    random: 10
+    goal_driven: 70
+    coverage: 20
+
+  stop:
+    max_steps: 5000
+    max_hours: 24
+    min_coverage: 80
+    stagnation_steps: 100
+
+  state:
+    hash_algorithm: "dhash"
+    similarity_threshold: 0.95
+    max_states: 1000
+
+  inventory:
+    min_confidence: 0.7
+    max_elements: 50
+
+  save:
+    every_n_steps: 10
+    keep_raw: true
+
+# =========================================================
+# 9. DATASET ENGINEERING (Phase 2)
+# =========================================================
+dataset:
+  grounding:
+    min_examples_per_element: 100
+    instructions_per_element: 5
+    instruction_types: ["functional", "short", "spatial", "paraphrase"]
+    balance_classes: true
+
+  action:
+    min_examples_per_action: 100
+    negative_ratio: 0.2
+    include_metadata: true
+
+  state:
+    success_ratio: 0.7
+    normalize_descriptions: true
+    include_error_types: true
+
+  simplifier:
+    min_examples_per_task: 100
+    paraphrases_per_instruction: 5
+    max_plan_length: 6
+    include_complex: true
+
+  augmentation:
+    enabled: true
+    methods:
+      - "paraphrase"
+      - "synonym_replacement"
+      - "back_translation"
+      - "spatial_variations"
+    multiplier: 3
+
+# =========================================================
+# 10. TRAINING (Phase 3)
+# =========================================================
+training:
+  seed: 42
+  device: "cuda"
+  mixed_precision: "fp16"
+
+  grounding:
+    model: "owlv2"
+    batch_size: 8
+    learning_rate: 1e-4
+    epochs: 10
+    optimizer: "adamw"
+    scheduler: "cosine"
+    early_stopping_patience: 3
+
+  action:
+    model: "siglip"
+    batch_size: 16
+    learning_rate: 1e-4
+    epochs: 15
+
+  state:
+    model: "siamese"
+    batch_size: 8
+    learning_rate: 1e-4
+    epochs: 10
+
+  simplifier:
+    model: "t5-small"
+    batch_size: 32
+    learning_rate: 3e-4
+    epochs: 20
+
+  evaluation:
+    teacher_student_agreement: 0.85
+    save_best_only: true
+    metrics:
+      - "accuracy"
+      - "f1"
+      - "iou"
+      - "bleu"
+
+# =========================================================
+# 11. MCP SERVER (Phase 4)
+# =========================================================
+mcp:
+  server:
+    host: "localhost"
+    port: 8000
+    workers: 1
+    timeout: 30
+
+  tools:
+    - "simplifier"
+    - "grounding"
+    - "action"
+    - "state"
+
+  auth:
+    enabled: false
+    type: "none"
+
+  rate_limit:
+    enabled: true
+    requests_per_minute: 60
+
+  logging:
+    level: "INFO"
+    log_requests: true
+
+# =========================================================
+# 12. FEATURE FLAGS
+# =========================================================
+features:
+  phase_0:
+    use_xvfb: true
+    save_screenshots: true
+    use_coordinates_config: false
+    test_mode: true
+
+  phase_1:
+    use_teacher: false
+    use_strategies: false
+    track_states: false
+    use_grounded_observation: true
+
+  phase_2:
+    build_grounding: false
+    build_action: false
+    build_state: false
+    build_simplifier: false
+    use_augmentation: false
+
+  phase_3:
+    train_grounding: false
+    train_action: false
+    train_state: false
+    train_simplifier: false
+    use_lora: false
+
+  phase_4:
+    enable_mcp: false
+    enable_monitoring: false
+
+# =========================================================
+# 13. DEVELOPMENT
+# =========================================================
+development:
+  debug: false
+  profile: false
+  profile_output: "logs/profile.prof"
+
+  test_mode: false
+  mock_teacher: false
+  fast_mode: false
+
+  keep_annotator_raw_on_success: false  # save raw model responses even for successful steps
+
+  cache:
+    enabled: true
+    directory: ".cache"
+    max_size_gb: 10
+
+  notifications:
+    enabled: false
+    type: "desktop"
+    on_completion: true
+    on_error: true
+
+# =========================================================
+# PROFILE-SPECIFIC OVERRIDES
+# Python code should:
+# 1) load this YAML
+# 2) deep-merge overrides[runtime.profile] into the base config
+# =========================================================
+overrides:
+  vm:
+    environment:
+      display:
+        virtual: true
+        display_num: ":99"
+        required_session_type: "x11"
+        screen:
+          width: 1280
+          height: 1024
+          depth: 24
+    training:
+      device: "cpu"
+
+  host:
+    environment:
+      display:
+        virtual: false
+        display_num: ":0"
+        required_session_type: "x11"
+    training:
+      device: "cuda"

@@ -1,0 +1,10 @@
+model: "qwen35-27b"
+api: "chat_completions"
+base_url: "https://f9e606f1-2275-4c84-9921-6c2c5f96e820.modelrun.inference.cloud.ru/v1"
+temperature: 0.0
+max_output_tokens: 8192
+enable_thinking: false   # Qwen3 thinking mode; false = disable <think> tokens
+image_detail: "auto"
+timeout_s: 60
+retries: 3
+retry_delay_s: 2

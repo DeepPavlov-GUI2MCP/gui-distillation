@@ -1,0 +1,25 @@
+{
+  "name": "Клик по цифровой кнопке",
+  "description": "Выбор действия для найденной цифровой кнопки",
+  "phase": "0.2",
+  "skill": "action",
+  "input": {
+    "screenshot": "data/screenshots/calculator_main.png",
+    "instruction": "нажми 5",
+    "target_bbox": [0.35, 0.5, 0.4, 0.55],
+    "element_type": "digit_button",
+    "context": "Стандартный клик левой кнопкой"
+  },
+  "output": {
+    "action_type": "click",
+    "target_bbox": [0.35, 0.5, 0.4, 0.55],
+    "parameters": {
+      "button": "left",
+      "clicks": 1
+    },
+    "confidence": 0.99
+  },
+  "metadata": {
+    "reasoning": "Для цифровых кнопок используется левый клик."
+  }
+}

@@ -1,0 +1,82 @@
+version: "1.0"
+domain: "gnome_calculator_basic"
+source: "docs/phase_0/skill_formalization.md"
+description: >
+  Canonical vocabulary of atomic tasks for SimplifierTask (Skill 0).
+  All tasks MUST be chosen from this list.
+
+tasks:
+  enter_number:
+    summary: "Enter a (possibly multi-digit) number."
+    params:
+      value:
+        type: "number"
+        required: true
+        constraints: "Any finite number."
+    examples:
+      - {"value": 42}
+      - {"value": 3.14}
+      - {"value": -10}
+
+  enter_digit:
+    summary: "Press a single digit button."
+    params:
+      digit:
+        type: "integer"
+        required: true
+        constraints: "0..9"
+    examples:
+      - {"digit": 5}
+      - {"digit": 0}
+
+  operation:
+    summary: "Press a binary operation button."
+    params:
+      op:
+        type: "string"
+        required: true
+        enum: ["+", "-", "*", "/"]
+    examples:
+      - {"op": "+"}
+      - {"op": "*"}
+
+  unary:
+    summary: "Apply a unary operation."
+    params:
+      op:
+        type: "string"
+        required: true
+        enum: ["sqrt", "percent", "inverse"]
+    examples:
+      - {"op": "sqrt"}
+      - {"op": "inverse"}
+
+  compute:
+    summary: "Compute the result (press '=')."
+    params: {}
+    examples:
+      - {}
+
+  clear:
+    summary: "Clear all (press 'C')."
+    params: {}
+    examples:
+      - {}
+
+  clear_entry:
+    summary: "Clear current entry (press 'CE')."
+    params: {}
+    examples:
+      - {}
+
+  toggle_sign:
+    summary: "Toggle sign (+/-)."
+    params: {}
+    examples:
+      - {}
+
+  add_decimal:
+    summary: "Add decimal point (press '.')."
+    params: {}
+    examples:
+      - {}

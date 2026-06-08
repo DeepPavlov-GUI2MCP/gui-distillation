@@ -1,0 +1,32 @@
+{
+  "name": "Успешное нажатие цифры",
+  "description": "После нажатия 5 дисплей изменился с 0 на 5",
+  "phase": "0.2",
+  "skill": "state",
+  "input": {
+    "screenshot_before": "data/screenshots/step_1_before.png",
+    "action": {
+      "action_type": "click",
+      "target_bbox": [0.35, 0.5, 0.4, 0.55],
+      "parameters": {
+        "button": "left",
+        "clicks": 1
+      }
+    },
+    "screenshot_after": "data/screenshots/step_1_after.png",
+    "context": "Калькулятор в начальном состоянии, нажимаем 5"
+  },
+  "output": {
+    "state": {
+      "success": true,
+      "change_type": "display_updated",
+      "display_before": "0",
+      "display_after": "5",
+      "description": "На дисплее было 0, после нажатия 5 стало 5"
+    },
+    "confidence": 0.97
+  },
+  "metadata": {
+    "visual_changes": ["цифра 5 появилась на дисплее"]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Простое сложение",
+  "description": "Декомпозиция запроса '5 + 3'",
+  "phase": "0.2",
+  "skill": "simplifier",
+  "input": {
+    "instruction": "5 + 3",
+    "language": "ru",
+    "complexity": "simple"
+  },
+  "output": {
+    "tasks": [
+      { "task": "enter_digit", "params": { "digit": 5 } },
+      { "task": "operation", "params": { "op": "+" } },
+      { "task": "enter_digit", "params": { "digit": 3 } },
+      { "task": "compute", "params": {} }
+    ],
+    "confidence": 0.95,
+    "plan_summary": "Ввести 5, нажать плюс, ввести 3, нажать равно"
+  }
+}
