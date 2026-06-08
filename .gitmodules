@@ -1,3 +1,6 @@
 [submodule "dart-gui"]
 	path = dart-gui
 	url = https://github.com/DeepPavlov-GUI2MCP/dart-gui.git
+[submodule "gui-a11y-exploration"]
+	path = gui-a11y-exploration
+	url = https://github.com/RT41yo/gui-a11y-exploration.git
