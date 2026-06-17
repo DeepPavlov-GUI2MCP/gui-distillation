@@ -4,3 +4,6 @@
 [submodule "gui-a11y-exploration"]
 	path = gui-a11y-exploration
 	url = https://github.com/RT41yo/gui-a11y-exploration.git
+[submodule "vlm-exploration"]
+	path = vlm-exploration
+	url = git@github.com:DeepPavlov-GUI2MCP/vlm-exploration.git
